@@ -19,6 +19,7 @@ var d = fs.readFileSync('settings.json', 'utf8');
 if (!d) {
   throw 'Cannot read app settings file.';
 }
+var settings = JSON.parse(d);
 
 d = fs.readFileSync('security.json', 'utf8');
 if (!d) {
