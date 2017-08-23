@@ -91,7 +91,7 @@ function processUser(user) {
 function sendMsg(number, msg) {
   console.log(number + ':' + msg);
   nexmo.message.sendSms(
-    settings.number, number, msg,
+    security.number, number, msg,
       (err, responseData) => {
         if (err) {
           console.log(err);
