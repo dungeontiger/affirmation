@@ -63,7 +63,7 @@ run();
 function run() {
   // process each user
   for (var u in users) {
-    console.log('Processing user: ' + u);
+//    console.log('Processing user: ' + u);
     processUser(users[u]);
   }
   // set an interval for the next check
@@ -90,14 +90,14 @@ function processUser(user) {
 }
 
 function sendMsg(number, msg) {
-  console.log(number + ':' + msg);
+//  console.log(number + ':' + msg);
   nexmo.message.sendSms(
     security.number, number, msg,
       (err, responseData) => {
         if (err) {
           console.log(err);
         } else {
-          console.dir(responseData);
+//          console.dir(responseData);
         }
       }
    );
