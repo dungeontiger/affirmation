@@ -1,0 +1,4 @@
+logs
+*.pem
+security.json
+*.sh
