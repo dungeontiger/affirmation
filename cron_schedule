@@ -1,1 +1,2 @@
-0,15,30,45 * * * * node app.js
+PATH=$PATH:/home/ubuntu/.nvm/versions/node/v8.4.0/bin
+0,15,30,45 * * * * cd affirmation;node app.js
